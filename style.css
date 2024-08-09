@@ -1,0 +1,3 @@
+.one > :first-child{
+    background-color: red;
+}
