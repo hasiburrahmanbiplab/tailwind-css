@@ -13,31 +13,21 @@
 </head>
 <body>
 
-  <div class="box  w-mix mx-auto bg-sky-500 p-4 group  rounded-lg mt-9">
-    <h2 class="text-3xl group-hover:text-white">Hasibur Rahman</h2>
-    <span class="text-base group-hover:text-white" group-hover:text-white>Student</span>
-    <p class="py-2 group-hover:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, velit nisi. Enim unde nemo numquam quod cupiditate accusamus veritatis impedit vitae non.</p>
-    <button class="p-3 bg-sky-400 rounded-md group-hover:text-white">More Information</button>
-  </div>
-  </div> 
-  <div class="image-box flex flex-col content-start items-start p-3 mt-2 mx-auto rounded-xl space-y-4 shadow-lg w-1/2 bg-gray-300">
-    <img src="image/faq.png" class="size-32" alt="">
-    <h2 class="text-xl text-sinc-600 font-medium">Lorem ipsum dolor sit amet consectetur <span class="block">adipisicing elit. Fugiat, laborum!</span></h2>
-    <button class="px-4 py-1 border border-purple-400 text-purple-500 rounded-full ring-2  ring-offset-2 ring-purple-600 hover:bg-purple-500 hover:border-transparent hover:text-white">Click Me</button>
-  </div>
+  <fieldset class="w-[400px] p-4 h-auto mx-auto bg-gray-600">
+    <h1>Your Gender</h1>
+    <input type="radio" class="peer/gender-male" name="gender" id="gender-male">
+    <label for="gender-male" class="peer-checked:text-green-600">Male</label>
 
-  <div class="flex flex-col">
-    <!-- Peer element (the input field) -->
-    <input type="text" class="peer border p-2" placeholder="Enter your name" required />
+    <input type="radio" class="peer/gender-female" name="gender" id="gender-female">
+    <label for="gender-female" class="peer-checked/gender-female:text-green-700">Female</label>
 
-    <!-- Target element (the label) -->
-    <label class="mt-2 text-gray-600 peer-valid:text-green-600 peer-required:text-red-500">
-        * Name is required
-    </label>
-</div>
+    <span class="hidden peer-checked/gender-male:block peer-checked/gender-male:text-yellow-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, assumenda!</span>
+    <span class="hidden peer-checked/gender-female:block peer-checked/gender-female:text-white">Lorem ipsum dolor, sit amet consectetur adipisicing.</span>
+  </fieldset>
 
 
-  
+
+
   
 </body>
 </html>
