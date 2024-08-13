@@ -7,12 +7,19 @@
 </head>
 <body class="">
 
- <div class="main w-[400px]">
-  <img src="image/bag-1.png" class="w-1/2 float-start" alt="">
-  <img src="image/bag-2.png" class="w-1/2 float-right" alt="">
-  <p class="clear-both">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus velit libero est harum, illo delectus autem iste voluptatem! Facere ipsam vel aliquam mollitia similique, iure nulla ratione perferendis. Cumque, dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe neque quos, veniam pariatur explicabo repellendus, perferendis libero rem ullam perspiciatis maxime dolores architecto voluptatibus commodi eius debitis unde alias.</p>
- </div>
 
+
+  
+  <div class="bg-red-500 mix-blend-multiply p-4">
+    <!-- The child will not blend with the parent due to 'isolate' -->
+    <div class="bg-blue-500 text-white isolate p-4">
+        This child is isolated
+    </div>
+
+    <!-- The child will blend with the parent as usual -->
+    <div class="bg-green-500 text-white isolation-auto p-4">
+        This child is not isolated
+    </div>
 </div>
 
   
